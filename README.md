@@ -7,7 +7,8 @@ An AI-powered platform to simplify access, exploration and visualization of ARGO
 ## Proposed solution (high level)
 - End-to-end pipeline to process ARGO NetCDF data into queryable stores.
 - Linked storage:
-  - Vector DB (MongoDB with vector-capable index) for embeddings / semantic search.
+  - Vector DB (MongoDB with vector-capable index) for RAG( embeddings / semantic search).
+  - LangGraph and LangChain components for RAG pipeline.
   - Relational DB (PostgreSQL) for normalized tabular records and analytics.
 - Backend LLM + RAG: natural-language queries → SQL (and semantic retrieval) to answer user questions and generate visualizations.
 - Streamlit-based dashboard for interactive visualization and conversational exploration.
